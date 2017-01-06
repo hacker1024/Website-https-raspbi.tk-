@@ -1,0 +1,53 @@
+body  {
+	font-family: calibri, sans-serif;
+	margin-top: 50px;
+	background-color: #191919;
+	background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+	background-image: url("https://assets.raspbi.tk/images/backgrounds/background.svg");
+}
+
+footer {
+	color: white;
+	position: fixed;
+	left: 5%;
+	bottom: 5%;
+	cursor: default;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+}
+
+.main {
+	width: 21cm;
+	height: auto;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: auto;
+	color: white;
+	background-color: #191919;
+}
+
+h1 {
+	color: white;
+	font-weight: bold;
+	font-size: 56px;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+pre {
+	font-family: inherit;
+}
+
+.back_link {
+	text-decoration: none;
+	color: yellow;
+}

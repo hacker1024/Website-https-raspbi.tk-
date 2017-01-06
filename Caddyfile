@@ -1,0 +1,81 @@
+#pi3.myddns.me {
+#	root firstsite/
+#	ext .html .htm .php
+#}
+
+*.raspbi.tk:443 {
+	tls {
+		max_certs 1024
+	}
+	errors {
+		404 error_pages/404.html
+	}
+}
+
+assets.raspbi.tk:443 {
+	root raspbi_assets/
+	ext .html .htm .php
+	browse / raspbi_assets/styles/browse.tpl
+	errors {
+		404 ../error_pages/404.html
+	}
+}
+
+raspbi.tk:443 {
+	root homepage/
+	fastcgi / 127.0.0.1:900 php
+	ext .html .htm .php
+	errors {
+		404 ../error_pages/404.html
+	}
+}
+
+firstsite.raspbi.tk:443 {
+	root firstsite/
+	fastcgi / 127.0.0.1:9000 php
+	ext .html .htm .php
+	errors {
+		404 ../error_pages/404.html
+	}
+}
+
+status.raspbi.tk:443 {
+	root status/
+	fastcgi / 127.0.0.1:9000 php
+	ext .html .htm .php
+	errors {
+		404 ../error_pages/404.html
+	}
+}
+
+php.raspbi.tk:443 {
+	root phptests/
+	fastcgi / 127.0.0.1:9000 php
+	ext .html .htm .php
+	errors {
+		404 ../error_pages/404.html
+	}
+}
+
+source.raspbi.tk:443 {
+	root open/
+	browse / raspbi_assets/styles/browse.tpl
+	redir {
+		if {file} ends_with ".html"
+		if_op or
+		if {file} ends_with ".php"
+		/ https://plaintext.raspbi.tk{uri}
+	}
+	errors {
+		404 ../error_pages/404.html
+	}
+}
+
+plaintext.raspbi.tk:443 {
+	root open/
+	browse /
+	header / Content-type text/plain
+	errors {
+		404 ../error_pages/404.html
+	}
+}
