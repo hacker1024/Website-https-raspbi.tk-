@@ -79,3 +79,9 @@ plaintext.raspbi.tk:443 {
 		404 ../error_pages/404.html
 	}
 }
+
+root.raspbi.tk:443 {
+        git github.com/hacker1024/Website-https-raspbi.tk- . {
+                interval 1800
+        }
+}
