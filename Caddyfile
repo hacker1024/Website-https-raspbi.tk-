@@ -32,7 +32,7 @@ raspbi.tk:443 {
 
 firstsite.raspbi.tk:443 {
 	root firstsite/
-	fastcgi / 127.0.0.1:9000 php
+	fastcgi / /var/run/php5-fpm.sock php
 	ext .html .htm .php
 	errors {
 		404 ../error_pages/404.html
@@ -41,7 +41,7 @@ firstsite.raspbi.tk:443 {
 
 status.raspbi.tk:443 {
 	root status/
-	fastcgi / 127.0.0.1:9000 php
+	fastcgi / /var/run/php5-fpm.sock php
 	ext .html .htm .php
 	errors {
 		404 ../error_pages/404.html
@@ -50,7 +50,7 @@ status.raspbi.tk:443 {
 
 php.raspbi.tk:443 {
 	root phptests/
-	fastcgi / 127.0.0.1:9000 php
+	fastcgi / /var/run/php5-fpm.sock php
 	ext .html .htm .php
 	errors {
 		404 ../error_pages/404.html
