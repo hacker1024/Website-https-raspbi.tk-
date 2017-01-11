@@ -13,17 +13,17 @@
 	</head>
 	<body>
 		<div class="main">
-			<?php readfile("navbar.txt") ?>
+			<?php readfile("navbar.html") ?>
 			<br><br>
 			<a class="back_link" href="https://raspbi.tk">⇦ back to raspbi.tk</a>
 			<h1 id="h1">Who am I?</h1>
 			<p class="main-paragraph">I am superl2</p>
 			<p class="main-paragraph">Some of my favourite things to do are:</p>
 			<ul id="favorite-things" class="main-paragraph">
-				<li>Play <a href="http://minecraft.net">Minecraft</a></li>
 				<li>Program in Python</li>
 				<li>Make websites like these!</li>
 			</ul>
+			<p class="main-paragraph">I'm also learning C++.</p>
 		</div>
 		<footer>Please enable JavaScript, or get a browser that supports it.</footer>
 	</body>

@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Welcome!</title>
 		<link rel="icon" type="image/x-icon" href="https://assets.raspbi.tk/images/favicons/triangle.ico">
-	 	<link rel="stylesheet" type="text/css" href="https://assets.raspbi.tk/styles/style1.css">
+		<link rel="stylesheet" type="text/css" href="https://assets.raspbi.tk/styles/style1.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<script src="https://assets.raspbi.tk/js/analytics.js"></script>
 		<script src="js/jquery.js"></script>
@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div class="main">
-			<?php readfile("navbar.txt") ?>
+			<?php readfile("navbar.html") ?>
 			<br><br>
 			<a class="back_link" href="https://raspbi.tk">⇦ back to raspbi.tk</a>
 			<h1 id="h1">My Website</h1>

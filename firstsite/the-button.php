@@ -15,7 +15,7 @@
 	</head>
 	<body>
 		<div class="main">
-			<?php readfile("navbar.txt") ?>
+			<?php readfile("navbar.html") ?>
 			<br><br>
 			<a class="back_link" href="https://raspbi.tk">⇦ back to raspbi.tk</a>
 			<h1 id="h1">The Button:</h1>
